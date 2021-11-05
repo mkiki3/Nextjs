@@ -1,1 +1,5 @@
 HI
+
+next js has a modern set up to where you dont have to import react
+Go back to 46:00 on Fragments 'Next.js Crash Course for Beginners 2021 - Learn NextJS from Scratch in this 100% Free Tutorial!'
+passHref forces link to send the href property to its child // Navigation between client pages

@@ -6,17 +6,17 @@ export default function Nav() {
       <div>
      <ul>
       <li>
-        <Link href="/Home" passHref>
+        <Link href="/home" passHref>
           <a>Home</a>
         </Link>
       </li>
       <li>
-        <Link href="/About" passHref>
+        <Link href="/about" passHref>
           <a>About Us</a>
         </Link>
       </li>
       <li>
-        <Link href="/Blog" passHref>
+        <Link href="/blog" passHref>
           <a>Blog Post</a>
         </Link>
       </li>

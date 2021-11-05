@@ -1,5 +1,4 @@
-import styles from '../styles/Home.module.css'
-
+// our-domain.com/blog/something-important
 export default function Blog() {
     return (
       <div>

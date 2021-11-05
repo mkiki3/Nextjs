@@ -1,10 +1,11 @@
-import styles from '../styles/Home.module.css'
+import {Fragment } from 'react'
 
 export default function Test() {
     return (
-      <div>
-          Test Page
-      </div>
+      <Fragment>
+          <h1>Test Page</h1>
+          <a href='/blog/something-important'>Something Important</a>
+      </Fragment>
     )
   }
   
