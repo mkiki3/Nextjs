@@ -1,3 +1,4 @@
+import Link from 'next/Link'
 export default function MainNavigation(){
     return(
         <header>
@@ -5,10 +6,10 @@ export default function MainNavigation(){
             <nav>
                 <ul>
                     <li>
-                        <Link to='/'> All Meetups</Link>
+                        <Link href='/' passHref> All Meetups</Link>
                     </li>
                     <li>
-                        <Link to='/new-meetup'>Add New Meetup</Link>
+                        <Link href='/new-meetup' passHref>Add New Meetup</Link>
                     </li>
                     <li></li>
                 </ul>

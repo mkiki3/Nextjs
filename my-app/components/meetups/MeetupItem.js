@@ -1,7 +1,12 @@
 //import Card from '../ui/Card'
 //import from './MeetupItem.module.css'
-
+import {useRouter} from 'next/router'
 export default function MeetupItem(props){
+    const router = useRouter()
+    //1:15:00
+    function showDetailsHandler(){
+        router.push('/' + props.id)
+    }
     return(
         <li>
             <div> 
