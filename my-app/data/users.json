@@ -1,0 +1,34 @@
+[{
+    "title": "Mr",
+    "firstName": "Frank",
+    "lastName": "Murphy",
+    "email": "frank.murphy@rustvale.com",
+    "role": "User",
+    "password": "sue123",
+    "id": 1,
+    "dateCreated": "2021-04-08T05:33:05.184Z",
+    "dateUpdated": "2021-04-08T05:33:05.184Z"
+},
+{
+    "title": "Ms",
+    "firstName": "Ciara",
+    "lastName": "Murphy",
+    "email": "ciara.murphy@rustvale.com",
+    "role": "User",
+    "password": "ciara123",
+    "id": 2,
+    "dateCreated": "2021-04-08T05:33:05.184Z",
+    "dateUpdated": "2021-04-08T05:33:05.184Z"
+},
+{
+    "title": "Mr",
+    "firstName": "Will",
+    "lastName": "Smith",
+    "email": "will.smith@rustvale.com",
+    "role": "User",
+    "password": "will123",
+    "id": 3,
+    "dateCreated": "2021-04-08T05:33:05.184Z",
+    "dateUpdated": "2021-04-08T05:33:05.184Z"
+}
+]
