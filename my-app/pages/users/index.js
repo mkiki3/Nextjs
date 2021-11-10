@@ -1,26 +1,9 @@
-import { usersRepo } from '../../helper/user-repo'
+//our-domain.com/userlist
+import UserForm from '../../components/profile/UserForm'
 
-export default function handler(req, res) {
-    switch (req.method) {
-        case 'GET':
-            return getUsers();
-        case 'POST':
-            return createUser();
-        default:
-            return res.status(405).end(`Method ${req.method} Not Allowed`)
+export default function NewUserPage(){
+    function addUserHandler(enteredUserData){
+        console.log(enteredUserData)
     }
-
-    function getUsers() {
-        const users = usersRepo.getAll();
-        return res.status(200).json(users);
-    }
-    
-    function createUser() {
-        try {
-            usersRepo.create(req.body);
-            return res.status(200).json({});
-        } catch (error) {
-            return res.status(400).json({ message: error });
-        }
-    }
+        return <UserForm onAddUser={addUserHandler}/>
 }

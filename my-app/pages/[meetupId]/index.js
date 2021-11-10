@@ -1,3 +1,4 @@
+//http://localhost:3000/m1
 import {Fragment} from 'react'
 import MeetupDetail from '../../components/meetups/MeetupDetail'
 

@@ -1,4 +1,5 @@
-[{
+export const usersData = [
+    {
     "firstName": "Frank",
     "lastName": "Murphy",
     "email": "frank.murphy@rustvale.com",

@@ -2,6 +2,7 @@
 import { usersRepo } from "../../../../helper/user-repo";
 
 export default function handler(req, res) {
+  //console.log(req.method)
     switch (req.method) {
         case 'GET':
             return getUserById();
@@ -14,6 +15,7 @@ export default function handler(req, res) {
     }
 
     function getUserById() {
+        console.log(' (2) test index')
         const user = usersRepo.getById(req.query.id);
         return res.status(200).json(user);
     }

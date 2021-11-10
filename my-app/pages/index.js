@@ -3,7 +3,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import MeetUpList from '../components/meetups/MeetupList'
 import Layout from '../components/layout' 
-import MainNavigation  from '../components/layout/MainNavigation'
+import UserForm from '../components/profile/UserForm'
 
 // our-domain.com/
 

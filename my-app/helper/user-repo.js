@@ -1,4 +1,4 @@
-const fs = require('fs');
+//const fs = require('fs');
 import users from '../data/users.json'
 
 export const usersRepo = {
@@ -14,11 +14,13 @@ function getAll() {
 }
 
 function getById(id) {
+    console.log('(3) user-repo')
+    //console.log('id ' + id)
     return users.find(x => x.id.toString() === id.toString());
 }
 
-function create({ title, firstName, lastName, email, role, password }) {
-    const user = { title, firstName, lastName, email, role, password };
+function create({ firstName, lastName, email, role }) {
+    const user = { firstName, lastName, email, role };
 
     // validate
     if (users.find(x => x.email === user.email))
@@ -33,11 +35,11 @@ function create({ title, firstName, lastName, email, role, password }) {
 
     // add and save user
     users.push(user);
-    saveData();
+    //saveData();
 }
 
-function update(id, { title, firstName, lastName, email, role, password }) {
-    const params = { title, firstName, lastName, email, role, password };
+function update(id, {  firstName, lastName, email, role }) {
+    const params = { firstName, lastName, email, role };
     const user = users.find(x => x.id.toString() === id.toString());
 
     // validate
@@ -54,7 +56,7 @@ function update(id, { title, firstName, lastName, email, role, password }) {
 
     // update and save
     Object.assign(user, params);
-    saveData();
+    //saveData();
 }
 
 // prefixed with underscore '_' because 'delete' is a reserved word in javascript
@@ -66,7 +68,8 @@ function _delete(id) {
 }
 
 // private helper functions
-
+/*
 function saveData() {
     fs.writeFileSync('data/users.json', JSON.stringify(users, null, 4));
 }
+*/
