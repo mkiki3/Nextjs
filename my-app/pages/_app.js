@@ -1,8 +1,7 @@
-import '../styles/globals.css'
+import '../styles/index.css'
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
 
 export default MyApp
-//1:11:00
