@@ -7,3 +7,4 @@ export default function NewUserPage(){
     }
         return <UserForm onAddUser={addUserHandler}/>
 }
+
